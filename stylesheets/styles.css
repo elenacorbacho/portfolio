@@ -1,83 +1,84 @@
-body{
-  background-image: url("../images/photodesktop_tiny.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  font-family: 'Koho', sans-serif;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  height: 100vh;
+[00:01, 13/4/2019] Tanuki: body{
+    font-family: 'Koho', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
 }
 
 nav {
-  display: flex;
-  justify-content: center;
-  padding-top: 10px;
-  background-color: rgb(57, 57, 57, 0.80);
-  height: 40px;
+	display: flex;
+	justify-content: center;
+	padding-top: 10px;
+	background-color: rgb(57, 57, 57, 0.80);
+	height: 40px;
 }
 
 li{
-  display:inline;
-  list-style-type: none;
-  margin: 0 .75rem;
+	display:inline;
+	list-style-type: none;
+	margin: 0 .75rem;
 }
 
 a {
-  color: white;
-  font-weight: 500;
-  font-size: 28px;
-  text-decoration: none;
+	color: white;
+	font-weight: 500;
+	font-size: 28px;
+	text-decoration: none;
 }
 
 a:hover {
-  color: #C5B7A6;
+	color: #C5B7A6;
 }
 
 h1 {
-  font-size: 70px;
+	font-size: 70px;
 }
 
 h2 {
-  font-size: 40px;
-  padding-top: 16px;
-  animation-name: mymove;
-  animation-duration: 4s;
+	font-size: 40px;
+	padding-top: 16px;
+	animation-name: mymove;
+	animation-duration: 4s;
 }
 
 main {
-  text-align: center;
-  margin: 200px;
+	text-align: center;
+	background: url("../images/photodesktop_tiny.jpg") no-repeat center center fixed;
+	background-size: cover;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 .mytittle {
-  height: 300px;
-  color: rgb(0,0,0);
+	height: 300px;
+	color: rgb(0,0,0);
 }
 
 footer{
-  display: flex;
-  justify-content: center;
-  padding-top: 10px;
-  background-color: rgb(57, 57, 57, 0.80);
-  height: 40px;
+	display: flex;
+	justify-content: center;
+	padding-top: 10px;
+	background-color: rgb(57, 57, 57, 0.80);
+	height: 40px;
 }
 
 @keyframes mymove {
-  from {
-  margin-top: 500px
-  }
-  to{
-  padding-top: 16px;
-  }
+	from {
+		margin-top: 500px
+	}
+	to {
+		padding-top: 16px;
+	}
 }
 
  @media (min-width: 1024px) {
 	h1  {
 	font-size: 90px;
-	}
-  
-  h2  {
-    font-size: 60px;
-  }
+	 }
+	 	h2  {
+	font-size: 60px;
+	 }
  }
