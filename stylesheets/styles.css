@@ -1,17 +1,19 @@
 body{
-  background-image: url("../images/photodesktop.jpg");
+  background-image: url("../images/photodesktop_tiny.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  max-height: 960px;
-  max-width: 1440px;
   font-family: 'Koho', sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
 }
 
 nav {
   display: flex;
   justify-content: center;
-  padding-top: 16px;
-  background-color: rgb(119, 119, 119, 0.50);
+  padding-top: 10px;
+  background-color: rgb(57, 57, 57, 0.80);
   height: 40px;
 }
 
@@ -24,12 +26,12 @@ li{
 a {
   color: white;
   font-weight: 500;
-  font-size: 20px;
+  font-size: 28px;
   text-decoration: none;
 }
 
 a:hover {
-  color: #4A90E2;
+  color: #C5B7A6;
 }
 
 h1 {
@@ -37,10 +39,10 @@ h1 {
 }
 
 h2 {
-  font-size: 30px;
+  font-size: 40px;
   padding-top: 16px;
   animation-name: mymove;
-  animation-duration: 2s;
+  animation-duration: 4s;
 }
 
 main {
@@ -50,13 +52,15 @@ main {
 
 .mytittle {
   height: 300px;
-  color: #2464AF;
+  color: rgb(0,0,0);
 }
 
 footer{
-  text-align: center;
-  height: 50px;
-  color: white;
+  display: flex;
+  justify-content: center;
+  padding-top: 10px;
+  background-color: rgb(57, 57, 57, 0.80);
+  height: 40px;
 }
 
 @keyframes mymove {
@@ -67,3 +71,13 @@ footer{
   padding-top: 16px;
   }
 }
+
+ @media (min-width: 1024px) {
+	h1  {
+	font-size: 90px;
+	}
+  
+  h2  {
+    font-size: 60px;
+  }
+ }
